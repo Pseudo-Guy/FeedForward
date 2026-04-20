@@ -1,0 +1,66 @@
+.donate-page {
+  padding-top: 80px; /* offset for fixed navbar */
+  background-color: var(--color-background);
+}
+
+.donate-header {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: white;
+  overflow: hidden;
+}
+
+.donate-header h1 {
+  color: var(--color-accent);
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.donate-header p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0);
+  background-size: 20px 20px;
+  z-index: 1;
+}
+
+.donate-content {
+  padding: 40px 20px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  margin-top: -30px; /* pull form up over the header slightly */
+}
+
+@media (max-width: 768px) {
+  .donate-header {
+    padding: 40px 20px 60px;
+  }
+  
+  .donate-header h1 {
+    font-size: 2rem;
+  }
+  
+  .donate-content {
+    margin-top: -40px;
+    padding: 20px 10px 60px;
+  }
+}
